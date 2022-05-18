@@ -15,9 +15,10 @@
     <project path="vendor/recovery" name="vendor/recovery" remote="fox" revision="master" />
 
 <!-- Use a custom build repository for OrangeFox 5.1 -->
-  <project path="build" name="fox-5.1_build" remote="TriDiscord" revision="fox-5.1" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
+    <remove-project name="android_build" />
+    <project path="build" name="fox-5.1_build" remote="TriDiscord" revision="fox-5.1" />
+        <copyfile src="core/root.mk" dest="Makefile" />
+    </project>
 
 <!-- Include external LineageOS repos for bash & nano -->
     <project name="android_external_bash" path="external/bash" remote="LineageOS" revision="cm-12.1" />
