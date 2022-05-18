@@ -16,7 +16,7 @@
 
 <!-- Use a custom build repository for OrangeFox 5.1 -->
     <remove-project name="android_build" />
-    <project path="build" name="android_build" remote="TriDiscord" revision="fix-5.1" groups="pdk,tradefed" >
+    <project path="build" name="fox-5.1_build" remote="TriDiscord" revision="fox-5.1" groups="pdk,tradefed" >
       <copyfile src="core/root.mk" dest="Makefile" />
     </project>
 
