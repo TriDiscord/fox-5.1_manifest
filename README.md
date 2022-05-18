@@ -29,4 +29,4 @@ mka recoveryimage
 
 - **TeamWin Recovery Project:** Build and manifest is based on their repositories
 - **OrangeFox Recovery Project:** The recovery itself
-- [**@Sushrut1101:**]((https://gitlab.com/Sushrut1101) This entire 5.1 manifest is based on their works
+- [**@SushRut1101:**](https://github.com/Sushrut1101) This entire 5.1 manifest is based on their works
