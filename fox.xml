@@ -2,6 +2,10 @@
 <manifest>
     <remote name="of"
             fetch="https://gitlab.com/OrangeFox" />
+    
+    <remote name="TeamWin"
+            fetch="https://github.com/TeamWin"
+            review="https://gerrit.twrp.me" />
 
     <remote name="TriDiscord"
             fetch="https://github.com/TriDiscord" />
