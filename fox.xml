@@ -17,7 +17,6 @@
 <!-- OrangeFox lives in fox_9.0 -->
     <project path="bootable/recovery" name="bootable/Recovery" remote="of" revision="fox_9.0" />
     <project path="vendor/recovery" name="vendor/recovery" remote="of" revision="master" />
-    <project path="bootable/recovery/gui/theme" name="misc/Theme" remote="of" revision="master" />
 
 <!-- Use a custom build repository for OrangeFox 5.1 -->
     <remove-project name="android_build" />
@@ -25,9 +24,13 @@
       <copyfile src="core/root.mk" dest="Makefile" />
     </project>
 
+<!-- Sync OrangeFox theme and its dependencies-->
+    <project path="bootable/recovery/gui/theme" name="misc/Theme" remote="of" revision="master" />
+    <project name="android_external_openssl" path="external/openssl" remote="LineageOS" revision="cm-12.1" />
+
 <!-- Include external LineageOS repos for bash & nano -->
     <project name="android_external_bash" path="external/bash" remote="LineageOS" revision="cm-12.1" />
     <project name="android_external_nano" path="external/nano" remote="LineageOS" revision="cm-12.1" />
     <project name="android_external_libncurses" path="external/libncurses" remote="LineageOS" revision="cm-12.1" />
-    <project name="android_external_openssh" path="external/openssh" remote="LineageOS" revision="cm-13.0" />
+    <project name="android_external_openssh" path="external/openssh" remote="LineageOS" revision="cm-12.1" />
 </manifest>
