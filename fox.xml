@@ -26,6 +26,7 @@
 
 <!-- Sync OrangeFox theme and its dependencies-->
     <project path="bootable/recovery/gui/theme" name="misc/Theme" remote="of" revision="master" />
+    <remove-project name="platform/external/openssl" />
     <project name="android_external_openssl" path="external/openssl" remote="LineageOS" revision="cm-12.1" />
 
 <!-- Include external LineageOS repos for bash & nano -->
