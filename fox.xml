@@ -24,11 +24,14 @@
       <copyfile src="core/root.mk" dest="Makefile" />
     </project>
 
-<!-- Sync OrangeFox GUI and its dependencies-->
+<!-- Sync OrangeFox GUI and its dependencies -->
     <project path="bootable/recovery/gui/theme" name="misc/Theme" remote="of" revision="master" />
     <remove-project name="platform/external/openssl" />
     <project path="external/boringssl" name="android_external_boringssl" remote="LineageOS" revision="cm-13.0" />
 
+<!-- Sync Android GCC 4.9 for ARM -->
+    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" groups="pdk,linux,arm" />
+    
 <!-- Include external LineageOS repos for bash & nano -->
     <project name="android_external_bash" path="external/bash" remote="LineageOS" revision="cm-12.1" />
     <project name="android_external_nano" path="external/nano" remote="LineageOS" revision="cm-12.1" />
