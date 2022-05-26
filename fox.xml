@@ -30,7 +30,7 @@
     <project path="external/boringssl" name="android_external_boringssl" remote="LineageOS" revision="cm-13.0" />
 
 <!-- Sync Android GCC 4.9 for ARM -->
-    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" groups="pdk,linux,arm" />
+    <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="android12L-release" groups="pdk,linux,arm" />
     
 <!-- Include external LineageOS repos for bash & nano -->
     <project name="android_external_bash" path="external/bash" remote="LineageOS" revision="cm-12.1" />
