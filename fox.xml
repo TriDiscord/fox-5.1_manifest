@@ -27,7 +27,11 @@
 <!-- Sync OrangeFox GUI and its dependencies -->
     <project path="bootable/recovery/gui/theme" name="misc/Theme" remote="of" revision="master" />
     <remove-project name="platform/external/openssl" />
+    <remove-project name="platform/external/libcxx" />
+    <remove-project name="platform/external/libcxxabi" />
     <project path="external/boringssl" name="android_external_boringssl" remote="LineageOS" revision="cm-13.0" />
+    <project path="external/libcxx" name="platform/external/libcxx" revision="refs/tags/android-6.0.1_r74" />
+    <project path="external/libcxxabi" name="platform/external/libcxxabi" revision="refs/tags/android-6.0.1_r74" />
 
 <!-- Sync Android GCC 4.9 for ARM -->
     <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="android12L-release" groups="pdk,linux,arm" />
