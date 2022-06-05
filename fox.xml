@@ -19,8 +19,12 @@
     <project path="vendor/recovery" name="vendor/recovery" remote="of" revision="master" />
 
 <!-- Use a custom build and libcxx repository for OrangeFox 5.1 -->
+    <remove-project name="android_build" />
     <remove-project name="platform/external/libcxx" />
     <remove-project name="platform/external/libcxxabi" />
+    <project path="build" name="fox-5.1_build-new" remote="TriDiscord" revision="fox_5.1" groups="pdk,tradefed" >
+      <copyfile src="core/root.mk" dest="Makefile" />
+    </project>
     <project path="external/libcxx" name="fox-5.1_libcxx" remote="TriDiscord" revision="fox_5.1" groups="pdk" />
     <project path="external/libcxxabi" name="platform/external/libcxxabi" revision="refs/tags/android-6.0.1_r74" />
 
