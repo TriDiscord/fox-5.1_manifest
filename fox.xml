@@ -18,20 +18,16 @@
     <project path="bootable/recovery" name="bootable/Recovery" remote="of" revision="fox_9.0" />
     <project path="vendor/recovery" name="vendor/recovery" remote="of" revision="master" />
 
-<!-- Use a custom build and libcxx repository for OrangeFox 5.1 -->
+<!-- Use a custom build repository for OrangeFox 5.1 -->
     <remove-project name="android_build" />
-    <remove-project name="platform/external/libcxx" />
-    <remove-project name="platform/external/libcxxabi" />
-    <project path="build" name="fox-5.1_build-new" remote="TriDiscord" revision="fox_5.1" groups="pdk,tradefed" >
+    <project path="build" name="fox-5.1_build" remote="TriDiscord" revision="fox_5.1" groups="pdk,tradefed" >
       <copyfile src="core/root.mk" dest="Makefile" />
     </project>
-    <project path="external/libcxx" name="fox-5.1_libcxx" remote="TriDiscord" revision="fox_5.1" groups="pdk" />
-    <project path="external/libcxxabi" name="platform/external/libcxxabi" revision="refs/tags/android-6.0.1_r74" />
 
 <!-- Sync OrangeFox GUI and its dependencies -->
     <project path="bootable/recovery/gui/theme" name="misc/Theme" remote="of" revision="master" />
     <remove-project name="platform/external/openssl" />
-    <project path="external/boringssl" name="android_external_boringssl" remote="LineageOS" revision="cm-13.0" />
+    <project path="external/boringssl" name="fox-5.1_openssl" remote="TriDiscord" revision="fox_5.1" />
 
 <!-- Sync Android GCC 4.9 for ARM -->
     <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="android12L-release" groups="pdk,linux,arm" />
