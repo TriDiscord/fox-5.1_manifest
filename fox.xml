@@ -23,6 +23,8 @@
     <project path="build" name="fox-5.1_build" remote="TriDiscord" revision="fox_5.1" groups="pdk,tradefed" >
       <copyfile src="core/root.mk" dest="Makefile" />
     </project>
+    <remove-project name="platform/external/stlport" />
+    <project path="external/stlport" name="android_external_stlport" remote="LineageOS" revision="cm-13.0" />
 
 <!-- Sync OrangeFox GUI and its dependencies -->
     <project path="bootable/recovery/gui/theme" name="misc/Theme" remote="of" revision="master" />
